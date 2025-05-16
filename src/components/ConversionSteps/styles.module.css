@@ -2,7 +2,7 @@
 .container {
   background: #fff;
   border-radius: 4px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #cbd5e1;
   padding: 16px;
   width: 100%;
   max-width: 1000px;
@@ -20,7 +20,8 @@
 .conversionTitle {
   font-size: 16px;
   font-weight: 600;
-  color: #0f172a;
+  color: #1e293b;
+  font-family: var(--font-switzer);
 }
 
 .dropdownToggle {
@@ -55,6 +56,7 @@
   padding-left: 8px;
   width: 100%;
   border-radius: 4px;
+  margin-bottom: 16px;
 }
 
 .stepConnectingLine {
@@ -63,7 +65,7 @@
   left: 8px;
   width: 1px;
   height: calc(100% - 10px);
-  background-color: #e2e8f0;
+  background-color: #cbd5e1;
   z-index: 1;
 }
 
@@ -105,8 +107,9 @@
 
 .stepTitle {
   font-weight: 500;
-  color: #0f172a;
+  color: #1e293b;
   font-size: 14px;
+  font-family: var(--font-switzer);
 }
 
 .currentStep .stepTitle {
@@ -120,6 +123,8 @@
 .stepDescription {
   color: #64748b;
   font-size: 14px;
+  font-family: var(--font-switzer);
+  margin-top: 2px;
 }
 
 .currentBadge {
@@ -144,6 +149,8 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  font-family: var(--font-switzer);
+  font-size: 14px;
 }
 
 .ongoingDot {
@@ -156,12 +163,15 @@
 .completionStatus {
   color: #64748b;
   font-size: 14px;
+  font-family: var(--font-switzer);
+  margin-top: 2px;
 }
 
 .actionsContainer {
   display: flex;
   gap: 8px;
   margin-left: auto;
+  margin-top: 8px;
 }
 
 .markAsDoneButton {
@@ -169,15 +179,16 @@
   align-items: center;
   justify-content: center;
   padding: 6px 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #cbd5e1;
   border-radius: 4px;
   background-color: white;
-  color: #0f172a;
+  color: #1e293b;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   gap: 4px;
   height: 32px;
+  font-family: var(--font-switzer);
 }
 
 .continueButton {
@@ -194,6 +205,7 @@
   cursor: pointer;
   gap: 4px;
   height: 32px;
+  font-family: var(--font-switzer);
 }
 
 .noteButton {
@@ -201,7 +213,7 @@
   align-items: center;
   justify-content: center;
   padding: 6px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #cbd5e1;
   border-radius: 4px;
   background-color: white;
   color: #64748b;
@@ -222,4 +234,5 @@
   background-color: #f8fafc;
   padding: 8px;
   border-radius: 4px;
-} 
+  margin: 8px 0;
+}

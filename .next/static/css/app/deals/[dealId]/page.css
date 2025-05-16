@@ -186,7 +186,7 @@
 .styles_container__5_0CA {
   background: #fff;
   border-radius: 4px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #cbd5e1;
   padding: 16px;
   width: 100%;
   max-width: 1000px;
@@ -204,7 +204,8 @@
 .styles_conversionTitle__48VzP {
   font-size: 16px;
   font-weight: 600;
-  color: #0f172a;
+  color: #1e293b;
+  font-family: var(--font-switzer);
 }
 
 .styles_dropdownToggle__urPsM {
@@ -239,6 +240,7 @@
   padding-left: 8px;
   width: 100%;
   border-radius: 4px;
+  margin-bottom: 16px;
 }
 
 .styles_stepConnectingLine__3xvDj {
@@ -247,7 +249,7 @@
   left: 8px;
   width: 1px;
   height: calc(100% - 10px);
-  background-color: #e2e8f0;
+  background-color: #cbd5e1;
   z-index: 1;
 }
 
@@ -289,8 +291,9 @@
 
 .styles_stepTitle__zG8RZ {
   font-weight: 500;
-  color: #0f172a;
+  color: #1e293b;
   font-size: 14px;
+  font-family: var(--font-switzer);
 }
 
 .styles_currentStep__poQ5F .styles_stepTitle__zG8RZ {
@@ -304,6 +307,8 @@
 .styles_stepDescription__6BQRr {
   color: #64748b;
   font-size: 14px;
+  font-family: var(--font-switzer);
+  margin-top: 2px;
 }
 
 .styles_currentBadge__9llgg {
@@ -328,6 +333,8 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  font-family: var(--font-switzer);
+  font-size: 14px;
 }
 
 .styles_ongoingDot__3xlCA {
@@ -340,12 +347,15 @@
 .styles_completionStatus__zPj4S {
   color: #64748b;
   font-size: 14px;
+  font-family: var(--font-switzer);
+  margin-top: 2px;
 }
 
 .styles_actionsContainer__NE2wJ {
   display: flex;
   gap: 8px;
   margin-left: auto;
+  margin-top: 8px;
 }
 
 .styles_markAsDoneButton__b__oh {
@@ -353,15 +363,16 @@
   align-items: center;
   justify-content: center;
   padding: 6px 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #cbd5e1;
   border-radius: 4px;
   background-color: white;
-  color: #0f172a;
+  color: #1e293b;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   gap: 4px;
   height: 32px;
+  font-family: var(--font-switzer);
 }
 
 .styles_continueButton__Za3aQ {
@@ -378,6 +389,7 @@
   cursor: pointer;
   gap: 4px;
   height: 32px;
+  font-family: var(--font-switzer);
 }
 
 .styles_noteButton__NKrd5 {
@@ -385,7 +397,7 @@
   align-items: center;
   justify-content: center;
   padding: 6px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #cbd5e1;
   border-radius: 4px;
   background-color: white;
   color: #64748b;
@@ -406,7 +418,8 @@
   background-color: #f8fafc;
   padding: 8px;
   border-radius: 4px;
-} 
+  margin: 8px 0;
+}
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/DealMilestones/styles.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************/
