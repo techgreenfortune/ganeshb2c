@@ -1,0 +1,500 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/screens/NewLead/styles.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+/* NewLead css */
+.styles_container__fIqpl {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+}
+
+.styles_wrapper__O93qB {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.styles_mainContent__3muct {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 56px);
+  height: calc(100% - 57px);
+  gap: 1rem;
+  padding: 1rem;
+  position: absolute;
+  top: 57px;
+  left: 56px;
+}
+
+/* Sidebar css */
+.styles_sidebar__RBkzA {
+  display: flex;
+  flex-direction: column;
+  width: 56px;
+  height: 100%;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-right: 1px solid #e2e8f0;
+  align-items: center;
+}
+
+.styles_logoContainer__QYGSv {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.styles_logoImage__a9gd_ {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+}
+
+.styles_navContainer__FI9Pr {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.styles_userContainer__B7JE7 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.styles_avatar__Ce41E {
+  width: 32px;
+  height: 32px;
+  background-color: #f5f5f5;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+}
+
+.styles_avatarFallback__htC_m {
+  font-size: 0.75rem;
+  color: #374151;
+}
+
+.styles_sidebarButton__LvtL0 {
+  width: 40px;
+  height: 40px;
+}
+
+.styles_sidebarButtonGhost__jT7k4 {
+  border-radius: 0.375rem;
+}
+
+.styles_sidebarButtonSecondary__rXlFL {
+  border-radius: 0.5rem;
+}
+
+.styles_selected__2WrUA {
+  background-color: #f1f5f9;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/DealHeader/styles.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/* DealHeader styles */
+.styles_container__bhaxG {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 16px 32px;
+  background: #fff;
+  width: 1064px;
+} 
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/MilestoneProgressBar/styles.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
+/* MilestoneProgressBar styles */
+.styles_container__66k0o {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.styles_stageContainer__4sqd_ {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.styles_stageImage__mdS_B {
+  height: 24px;
+  width: 176px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+.styles_stageText__idBtd {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 176px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  z-index: 1;
+}
+
+.styles_stageTextCompleted__vvaoJ {
+  color: #fff;
+  font-weight: 400;
+}
+
+.styles_stageTextCurrent__Jk2Sb {
+  color: #22223B;
+  font-weight: 600;
+}
+
+.styles_stageTextUpcoming__H58KV {
+  color: #64748b;
+  font-weight: 400;
+}
+
+.styles_spacer__n3PDP {
+  width: 0;
+} 
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/ConversionSteps/styles.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+/* ConversionSteps styles */
+.styles_container__5_0CA {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+  padding: 16px;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 8px;
+}
+
+.styles_titleContainer__OtEaY {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.styles_conversionTitle__48VzP {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.styles_dropdownToggle__urPsM {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #64748b;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.styles_dropdownToggle__urPsM:hover {
+  color: #0f172a;
+}
+
+.styles_stepHeader__kH3MZ {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.styles_stepsContainer__uBbPT {
+  margin-top: 12px;
+}
+
+.styles_stepItem__uPr1U {
+  position: relative;
+  padding-left: 8px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.styles_stepConnectingLine__3xvDj {
+  position: absolute;
+  top: 18px;
+  left: 8px;
+  width: 1px;
+  height: calc(100% - 10px);
+  background-color: #e2e8f0;
+  z-index: 1;
+}
+
+.styles_stepContent__gIcdI {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 0;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.styles_stepIcon__diYSk {
+  margin-top: 2px;
+}
+
+.styles_stepCircle__odnn7 {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.styles_stepTextContent__8X0rn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.styles_stepRow__uAiUu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.styles_stepTitle__zG8RZ {
+  font-weight: 500;
+  color: #0f172a;
+  font-size: 14px;
+}
+
+.styles_currentStep__poQ5F .styles_stepTitle__zG8RZ {
+  color: #0284c7;
+}
+
+.styles_completedStep__zTokS .styles_stepTitle__zG8RZ {
+  color: #16a34a;
+}
+
+.styles_stepDescription__6BQRr {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.styles_currentBadge__9llgg {
+  margin-left: 8px;
+  font-size: 12px;
+  color: #0284c7;
+  background: #f0f9ff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.styles_statusIndicator__pzaNu {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.styles_ongoingStatus__w2MIW {
+  color: #ef4444;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.styles_ongoingDot__3xlCA {
+  width: 8px;
+  height: 8px;
+  background-color: #ef4444;
+  border-radius: 50%;
+}
+
+.styles_completionStatus__zPj4S {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.styles_actionsContainer__NE2wJ {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.styles_markAsDoneButton__b__oh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  background-color: white;
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  gap: 4px;
+  height: 32px;
+}
+
+.styles_continueButton__Za3aQ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0284c7;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  gap: 4px;
+  height: 32px;
+}
+
+.styles_noteButton__NKrd5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  background-color: white;
+  color: #64748b;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+}
+
+.styles_currentStep__poQ5F .styles_stepCircle__odnn7 {
+  border: 2px solid #0891b2;
+}
+
+.styles_upcomingStep__USYsw .styles_stepCircle__odnn7 {
+  border: 1px dashed #e2e8f0;
+}
+
+.styles_currentStep__poQ5F {
+  background-color: #f8fafc;
+  padding: 8px;
+  border-radius: 4px;
+} 
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/DealMilestones/styles.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+/* DealMilestones styles */
+.styles_container__lEkiN {
+  background: #fff;
+  margin: 16px 32px 24px 0;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.styles_header__g9y_U {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.styles_titleWrapper__JiP_e {
+  flex: 1;
+}
+
+.styles_title__0M6t_ {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.styles_progressText__9ct__ {
+  color: #64748b;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.styles_stepsContainer__ogtBL {
+  margin-top: 16px;
+} 
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/SidebarTabs/styles.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+/* SidebarTabs styles */
+.styles_container__zDxRB {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0 24px;
+  margin-top: 0;
+}
+
+.styles_tabButton__U2Vyj {
+  padding: 16px 0;
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  color: #64748b;
+}
+
+.styles_tabButton__U2Vyj:not(:last-child) {
+  margin-right: 32px;
+}
+
+.styles_activeTab__F0VhK {
+  border-bottom: 2px solid #0284c7;
+  color: #0f172a;
+} 
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/DealSidebar/styles.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+/* DealSidebar styles */
+.styles_container__EFtHl {
+  width: 320px;
+  background: #fff;
+  padding: 0;
+  border-left: 1px solid #e2e8f0;
+  height: calc(100vh - 57px);
+  display: flex;
+  flex-direction: column;
+}
+
+.styles_content__SCOAP {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+} 
