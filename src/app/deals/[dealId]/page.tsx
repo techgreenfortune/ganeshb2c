@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { Sidebar } from "@/screens/NewLead/Sidebar";
 import Header from "@/components/Header";
-import styles from "../../../screens/NewLead/styles.module.css";
+import styles from "./styles.module.css";
 import DealHeader from "@/components/DealHeader";
 import DealMilestones from "@/components/DealMilestones";
 import DealSidebar from "@/components/DealSidebar";
@@ -32,7 +32,7 @@ export default function DealOverviewPage() {
   return (
     <div className={styles.container}>
       <Sidebar />
-      <div className={styles.wrapper} style={{ marginLeft: 56 }}>
+      <div className={styles.wrapper}>
         <Header 
           breadcrumbs={[
             { label: "Home", href: "/" },
@@ -40,26 +40,10 @@ export default function DealOverviewPage() {
             { label: dealId as string }
           ]} 
         />
-        {/* Main Content */}
-        <div style={{ 
-          display: "flex", 
-          minHeight: "calc(100vh - 57px)", 
-          background: "#f8fafc",
-          width: "1384px",
-          height: "845px"
-        }}>
-          <div style={{ 
-            flex: "1 1 0%",
-            width: "1064px",
-            height: "845px"
-          }}>
+        <div className={styles.mainContent}>
+          <div className={styles.contentWrapper}>
             <DealHeader />
-            <div style={{ 
-              display: "flex", 
-              flexDirection: "column",
-              height: "calc(100% - 65px)", // Subtract header height
-              overflowY: "auto" // Make this section scrollable
-            }}>
+            <div className={styles.milestonesWrapper}>
               <DealMilestones 
                 currentStage={currentStage}
                 progress={15}
