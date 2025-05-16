@@ -1,0 +1,428 @@
+The following are high-medium-level requirements for the Sales Module. It is for a sales executive and an area sales manager. The versions will have some changes for a Regional Sales Manager and the National Head. We shall define these after we finish designs for a sales executive. 
+Home Dashboard:
+To have two cards:
+Task Prioritisation (C1 → C2 and C3 —> C7): The sales team’s targets for each day are set clearly. They need to move leads in C1 to C2 in the first half and C3 → C7 in the second half. 
+Alerts: The salespeople get alerts of existing orders for which their interventions are required:
+Payment collections
+Resolving deviations
+Product Issues
+T&C Acceptance
+Delay Management (informing customers)
+Feedback & Customer Satisfaction after installation - explain the after-sales service to every customer. 
+
+Feature: Add New Lead: Here we need to also have a feature to add new Lead. It will have the following details:
+Customer details
+Name, Number, Email,
+Site Details
+Project Name
+Site Geo Location
+Site Address (including pin code)
+Lead Type <Text Field> (Inputs ex: 3 BHK/G+3)
+Reference (if any)
+Orders Tab:
+To capture four stages and each stage should have the following tags
+
+
+
+Order Confirmed
+
+(only comes to this stage when token or 50% advance is collected)
+Advance (50%) collected
+Advance Pending
+T&C Accepted
+T&C Pending
+Final Survey: In Progress
+Final Survey: Completed
+Final Survey: Deviations
+Under Production
+
+(only orders that have 50% of advance payment collected and the final survey is completed 
+On-time
+delayed
+
+*note: need to figure out and think of how multiple work orders (under the same order) are shown. 
+Delivered 
+Installation: in progress/date scheduled/paused/postponed
+Paused: site conditions not suitable,  product issues
+Postponed: when the paused issue is resolved and a solution is arrived to
+Installed
+Payment pending
+Closed (fade out)
+
+
+Order Full View Template: 
+Details inputted while creating lead (Customer and Project Details)
+Area in Sft (extract from the latest quotation)*
+Total Order Value ( (extract from the latest quotation)*
+Order Status* (and history - similar to Delhivery tracking details? If at one of the stages an issue has been reported, the sales executive should be able to expand and see what it is. For example, the order is delivered but there are product issues, they should have visibility on what those issues are). The following are different and can be linked to the table above. 
+Quotations: (final and versions/ongoing versions)
+Payments Collected (ex - 1,20,000/2,40,000, a tracker and history)
+Dates (if order is under production, expected date of completion and delivery. If delivered, date delivered on an installation date schedule. If installed, when it was installed. Basically should have date of the next successive action in the workflow)
+
+Note: the order should have different states. For ex, if final survey is done and successful, the screen should show the next action. If 50% payment isn’t made, it should nudge the sales executive to collect it, to push order to production. Or once quotation is finalised, it should allow sales executives to request Final Survey. The sales executive should have a feature to request revisions. 
+
+Targets:
+Sales executives should be able to track their performance metrics. To start off, let’s have the following:
+Monthly Target:
+Area wise (in sft)
+Value (in INR)
+Rate (in INR)
+
+Receipts Pending
+Total payments to be received from confirmed orders. 
+
+Orders Closed:
+Area and Total Order Value of closed orders (i.e. orders installed and warranties issued)
+
+
+
+
+
+Deals Page:
+The view will change as per role. The following table defines it:
+
+Role
+View
+Features
+Sales Head
+Able to view all leads
+Deal ID (to be pulled from Eva Quotation)
+Customer Name/Project Name
+Area
+Deal Value
+Contact
+Created
+Next Steps
+Due Date
+Owner of the lead (Name and Designation)
+Regional Sales Manager
+Able to view leads assigned to him + ASMs under him + Sales Executives under the ASM
+All of the above 
+Area Sales Manager
+Able to view leads assigned to him + the sales executives under him
+All of the above 
+Sales Executive
+Only able to view leads assigned to him
+All of the above minus (owner of the lead)
+
+
+We need to add the following features also in the deals page: 
+Search Tab
+The user should be able to change the stage of the deal there itself instead of clicking on “advance deal stage”
+The red alert icon on project name should come up whenever the user gets a task to do on the project
+
+The three dots button at the end of the table should contain the following item basis the stage in which the deal is:
+
+
+
+Stage
+Items
+Order Confirmed
+Final Quotation
+Latest Payments (open a pop-up that shows the payment chain/history along with total and pending)
+Order Delivered
+Above along with:
+Proof of Delivery Document
+Delivery Challan
+Invoice
+Installation Done
+Above along with:
+H”;andover Form (QC done after installation)
+Warranty Card (should be shareable to the client on WA/Email if needed)
+Before Order is Confirmed
+Only able to see:
+Latest Quotation
+
+
+Changes:
+In the Create New Deal flow, please make the following changes:
+Email is not mandatory
+Project Name is not mandatory
+Reference - should be a dropdown with the following options:
+Architect
+Interior Designer
+Contractor
+Freelancer
+Direct
+Others
+If it is one of the first four, then the flow should be the following:
+Select Architect from dropdown list → open list of architects → search for architect and tag it to them. 
+If an architect isn’t there, they should be able to create an architects there. 
+We call the above roles as influencers. We shall have a database of these, and we should be able to see the various orders/leads from a single architect/interior designer/contractor/freelancer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Detailed Order View Page:
+
+
+
+In the detailed order view page the following are a list of features that have to enabled during each of the stage, and how their typical flows look like:
+
+
+Stage
+Feature
+Flow
+LEAD
+Schedule Site Visit
+Call Customer → Note Date and Timing → Update on Dashboard → Get notification/reminder the previous day
+Request Quotation
+Request Quotation → Upload Measurements → Mention any special comments (if needed) → Request Quote
+View/Download/Share Quote
+When quote is ready:
+
+Receive notification → View Quote → If all good, share with customer (WA, Email)
+
+If not good → Add comments → Request quotation revision
+
+At this stage, the  sales user should review quotations, confirm they have been reviewed, and only then can get the option to share with customers. 
+Revise Quotation
+Request Revision → Add Specific Changes as comments → Request revision
+Mark Finalsed Quote
+Mark a quote as a finalised quote. 
+
+This should trigger and allow payment collection 
+Collect Payment
+Collect Payment → Select against which quotation → Display total quotation value → Enter Amount to collect → Select Payment type → generate link and share link to customer WA/Email/SMS
+
+If payment done through UPI/Bank Transfer or Cheque:
+
+Record Payment → Upload Payment Proof → Select against which quotation → Enter the amount → Enter payment type → Request accounts to confirm
+Upload Site Photos or Documents
+Upload Documents/Images → Write description → Upload
+ORDER
+Request for Final Survey
+Request for final survey → Mark the quotation against which order is done (if not done before) → Send
+
+
+View Survey Details
+Ability to see the following details:
+- See Status:
+Pending
+Scheduled along with Date
+Under Progress
+Delayed (reason)
+On Hold (reason)
+Completed, Under Final Review
+Completed, Deviations Detected
+Completed, Revised and Final Quote Issued
+Completed, Moved to Production
+
+
+- Date and Time of Survey
+
+- Notes (if any)
+
+
+Request Quote (Final/Deviation)
+Once the survey is done, installation head approves the existing survey:
+
+Request quotation with recorded measurements (measurements should be automatically attached from survey module)
+
+Once quote is ready → receive notification → mark as verified/reviewed → share with customer (WA/Email)
+
+Once survey is done, installation head mentions deviations:
+
+Discuss with customer and get approval → request for revised quotation → automatic attachment of recorded measurements → add notes of changes to be made → request quotation
+
+Once quote is ready → receive notification → mark as verified/reviewed → share with customer (WA/Email)
+
+Once a customer approves, mark the quote as final. 
+
+
+Collect Payment (50%)
+Collect 50% advance payment. 
+
+Request payment → to automatically fill the amount (50% of order value minus token collected) → generate payment link → share with customer
+
+If payment done through UPI, Bank Transfer or Cheque:
+
+Record Payment → Enter Amount → System to verify if the amount is 50% minus token value → Upload payment proof → Request account approval 
+
+
+Move to Production
+If payment is successful (payment link call back/accounts approval), order to automatically move to Production 
+Production haritd09@gmail.com
+View Expected Delivery Date
+Expected Date of Delivery (at the order level or in the card) 
+Status: On time / Delayed
+If delayed, view reason
+Expected  New Date of Delivery and Original Delivery Date (if delay is happening) 
+Once Production is complete, view the QC checklist (done by the onsite coordinator)
+
+
+Delivery & Installation haritd09@gmail.com
+View Installation Details
+Delivery Scheduled Date, and Vehicle Number
+Delivery Status: Scheduled, Under Progress, Completed
+
+Date of Installation & Name of person in charge
+Status
+Pending
+Scheduled along with Date
+Under Progress
+Delayed (reason)
+On Hold (reason)
+Completed, QC and Handover Done
+
+If installation done, view Handover Form (QC checklist signed by customer)
+
+
+
+
+
+
+
+
+
+New Additions:
+
+Dashboard View for Sales Coordinator:
+We need to create a new version for the new role of Sales Coordinator. This person will have the following functionalities 
+(*we can pick this up at the end)
+
+Since we don’t have a CRM integration, they shall enter all the CRM leads into our system and assign it to the various sales execs, ASM, RSM and Sales Heads.
+They should be able to provide daily summaries of the following:
+
+Sales Head should get an Analytics Dashboard: 
+The analytics dashboard should contain the following items:
+
+
+
+Customer Maturity Stages 
+Code
+Status
+Description
+Required Actions
+Source
+CF
+Future Pipeline
+High intent, future requirement
+- Create timed follow-up  - Document timeline
+- Assign to sales executive
+  - Add to nurture sequence  - Schedule future contact
+Direct from Pre-Sales High Intent Future Lead
+C0
+Active Pipeline
+Current month requirement
+- Assign to area executive  
+1. Direct from Pre-Sales High Intent Current Lead  2. CF lead when timeline becomes current
+
+Note: Here the classification to CF or C1 is done by the pre-sales team. Once this is done, the sales team shall handle it. 
+
+
+
+
+
+ Customer Maturity Progression (Sales Team)
+Code
+Status
+Description
+Required Actions
+C1
+Initial Quote
+Quote sent post initial site visit and measurement collection
+
+Site visit coordination
+Measurement Collection
+Quote  generation, re
+Negotiation tracking
+C2
+              Token Received
+Order confirmed with token
+Payment Collection
+Payment documentation 
+Schedule final survey  
+C3
+Final Survey and Check
+Technical survey and cross check with initial quote completed
+
+Assign Surveyor
+Check Site Readiness
+Site Survey Schedule (Date & Time)
+Post survey, Compare with Quote and Measurement verification
+Technical assessment  
+Production feasibility check
+If major  deviations, send changes to the sales team. Sales Team to inform customer and send revisions to quotations team
+If no major deviations, send to quotations team to generate final quote with updated measurements
+C3A
+Quote Revision
+Deviation (major and minor)  with initial survey. Quote to undergo revision
+- Quote generation (with updated requirements)
+- Verify with Survey Team
+ - Update customer and confirm order
+C4
+Final Quote
+Final quote sent 
+- Quote generation and sending
+C5
+Order Confirmed
+50% payment received
+- 50% Payment collection 
+- Production initiation  
+
+
+C6
+In Production
+Order under production
+
+
+C7
+Ready for Dispatch
+Production completed, Schedule Delivery
+
+
+
+C7A
+Second Payment
+Material cost minus installation received
+
+
+
+C8
+Delivered
+Work Order delivered
+
+
+C9
+Under Installation
+Work order under installation
+-
+C10
+Installation Completed
+
+
+
+
+C11
+Final Payment
+Remaining payment collected
+
+
+C12
+Completed
+Project closed
+-
+CL
+Lost
+Customer is lost
+
+
+
+
+
+
+
