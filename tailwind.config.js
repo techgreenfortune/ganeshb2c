@@ -60,12 +60,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        "medium-xs": "var(--medium-xs-font-family)",
-        "regular-xxs": "var(--regular-xxs-font-family)",
-        "small-regular": "var(--small-regular-font-family)",
-        "small-semibold": "var(--small-semibold-font-family)",
-        "xsmall-regular": "var(--xsmall-regular-font-family)",
         sans: [
+          'var(--font-switzer)',
           "ui-sans-serif",
           "system-ui",
           "sans-serif",
